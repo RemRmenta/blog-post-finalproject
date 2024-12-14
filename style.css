@@ -1,0 +1,247 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+  transition: color 0.3s ease;
+}
+
+@keyframes animate-gradient  {
+  to {
+    background-position: 200%;
+  }
+}
+
+.post {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.post h2:hover {
+  color: #007bff;
+}
+
+.post p {
+  margin: 5px 0 10px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.post p:hover {
+  color: #444;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttons .edit-btn {
+  background: #007bff;
+  color: #fff;
+}
+
+.buttons .edit-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons .edit-btn i {
+  font-size: 16px;
+}
+
+.buttons .delete-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+.buttons .delete-btn:hover {
+  background: #c82333;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons .delete-btn i {
+  font-size: 16px;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h2 {
+  margin: 0 0 10px;
+}
+
+.modal-content label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal-content button {
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content .cancel-btn {
+  background: #6c757d;
+  color: #fff;
+  margin-left: 10px;
+}
+
+/* Enhanced Notification Styling */
+.notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #28a745;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease-out, fadeOut 0.3s 2.7s forwards;
+}
+
+.notification.active {
+  display: block;
+}
+
+.notification button {
+  margin-top: 10px;
+  background: #fff;
+  color: #28a745;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, -60%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Fade-in and fade-out animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
