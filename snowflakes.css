@@ -1,0 +1,221 @@
+/* Snowflakes Style */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    pointer-events: none;
+    color: white;
+    font-size: 20px;
+    user-select: none;
+    z-index: 9999;
+    animation: fall linear infinite;
+}
+
+/* Randomize Snowflakes Falling Animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* Randomize size, speed, and delay of each snowflake */
+.snowflake:nth-child(1) {
+    left: 10%;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    font-size: 10px;
+}
+
+.snowflake:nth-child(2) {
+    left: 20%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    font-size: 25px;
+}
+
+.snowflake:nth-child(3) {
+    left: 30%;
+    animation-duration: 9s;
+    animation-delay: 2s;
+    font-size: 12px;
+}
+
+.snowflake:nth-child(4) {
+    left: 40%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    font-size: 30px;
+}
+
+.snowflake:nth-child(5) {
+    left: 50%;
+    animation-duration: 10s;
+    animation-delay: 4s;
+    font-size: 15px;
+}
+
+.snowflake:nth-child(6) {
+    left: 60%;
+    animation-duration: 7s;
+    animation-delay: 5s;
+    font-size: 35px;
+}
+
+.snowflake:nth-child(7) {
+    left: 70%;
+    animation-duration: 6s;
+    animation-delay: 6s;
+    font-size: 20px;
+}
+
+.snowflake:nth-child(8) {
+    left: 80%;
+    animation-duration: 9s;
+    animation-delay: 7s;
+    font-size: 8px;
+}
+
+.snowflake:nth-child(9) {
+    left: 90%;
+    animation-duration: 7s;
+    animation-delay: 8s;
+    font-size: 18px;
+}
+
+/* Additional Snowflakes for More Variety */
+.snowflake:nth-child(10) {
+    left: 15%;
+    animation-duration: 12s;
+    animation-delay: 1.5s;
+    font-size: 40px;
+}
+
+.snowflake:nth-child(11) {
+    left: 25%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    font-size: 5px;
+}
+
+.snowflake:nth-child(12) {
+    left: 35%;
+    animation-duration: 8s;
+    animation-delay: 3.5s;
+    font-size: 25px;
+}
+
+.snowflake:nth-child(13) {
+    left: 45%;
+    animation-duration: 11s;
+    animation-delay: 4s;
+    font-size: 15px;
+}
+
+.snowflake:nth-child(14) {
+    left: 55%;
+    animation-duration: 9s;
+    animation-delay: 5s;
+    font-size: 50px;
+}
+
+.snowflake:nth-child(15) {
+    left: 65%;
+    animation-duration: 6s;
+    animation-delay: 6.5s;
+    font-size: 10px;
+}
+
+.snowflake:nth-child(16) {
+    left: 75%;
+    animation-duration: 13s;
+    animation-delay: 7s;
+    font-size: 30px;
+}
+
+.snowflake:nth-child(17) {
+    left: 85%;
+    animation-duration: 5s;
+    animation-delay: 8.5s;
+    font-size: 8px;
+}
+
+.snowflake:nth-child(18) {
+    left: 95%;
+    animation-duration: 12s;
+    animation-delay: 9s;
+    font-size: 22px;
+}
+
+/* Additional snowflakes for more density */
+.snowflake:nth-child(19) {
+    left: 12%;
+    animation-duration: 10s;
+    animation-delay: 1.2s;
+    font-size: 18px;
+}
+
+.snowflake:nth-child(20) {
+    left: 22%;
+    animation-duration: 9s;
+    animation-delay: 0.5s;
+    font-size: 28px;
+}
+
+.snowflake:nth-child(21) {
+    left: 32%;
+    animation-duration: 11s;
+    animation-delay: 3s;
+    font-size: 24px;
+}
+
+.snowflake:nth-child(22) {
+    left: 42%;
+    animation-duration: 8s;
+    animation-delay: 4.3s;
+    font-size: 15px;
+}
+
+.snowflake:nth-child(23) {
+    left: 52%;
+    animation-duration: 13s;
+    animation-delay: 6.5s;
+    font-size: 35px;
+}
+
+.snowflake:nth-child(24) {
+    left: 62%;
+    animation-duration: 7s;
+    animation-delay: 5s;
+    font-size: 20px;
+}
+
+.snowflake:nth-child(25) {
+    left: 72%;
+    animation-duration: 9s;
+    animation-delay: 2.2s;
+    font-size: 50px;
+}
+
+.snowflake:nth-child(26) {
+    left: 82%;
+    animation-duration: 12s;
+    animation-delay: 7.2s;
+    font-size: 12px;
+}
+
+.snowflake:nth-child(27) {
+    left: 92%;
+    animation-duration: 6s;
+    animation-delay: 1.4s;
+    font-size: 8px;
+}
+
+.snowflake:nth-child(28) {
+    left: 35%;
+    animation-duration: 10s;
+    animation-delay: 2.7s;
+    font-size: 25px;
+}
