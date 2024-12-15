@@ -1,11 +1,234 @@
 * {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
 }
 
 body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0;
-  background-color: #302e2d;
+  background-color: #111111;
+}
+
+/* Snowflakes Style */
+.snowflake {
+  position: fixed;
+  top: -10px;
+  pointer-events: none;
+  color: white;
+  font-size: 20px;
+  user-select: none;
+  z-index: 9999;
+  animation: fall linear infinite;
+}
+
+/* Randomize Snowflakes Falling Animation */
+@keyframes fall {
+  0% {
+      transform: translateY(-100px);
+  }
+
+  100% {
+      transform: translateY(100vh);
+  }
+}
+
+/* Randomize size, speed, and delay of each snowflake */
+.snowflake:nth-child(1) {
+  left: 10%;
+  animation-duration: 8s;
+  animation-delay: 0s;
+  font-size: 10px;
+}
+
+.snowflake:nth-child(2) {
+  left: 20%;
+  animation-duration: 7s;
+  animation-delay: 1s;
+  font-size: 25px;
+}
+
+.snowflake:nth-child(3) {
+  left: 30%;
+  animation-duration: 9s;
+  animation-delay: 2s;
+  font-size: 12px;
+}
+
+.snowflake:nth-child(4) {
+  left: 40%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  font-size: 30px;
+}
+
+.snowflake:nth-child(5) {
+  left: 50%;
+  animation-duration: 10s;
+  animation-delay: 4s;
+  font-size: 15px;
+}
+
+.snowflake:nth-child(6) {
+  left: 60%;
+  animation-duration: 7s;
+  animation-delay: 5s;
+  font-size: 35px;
+}
+
+.snowflake:nth-child(7) {
+  left: 70%;
+  animation-duration: 6s;
+  animation-delay: 6s;
+  font-size: 20px;
+}
+
+.snowflake:nth-child(8) {
+  left: 80%;
+  animation-duration: 9s;
+  animation-delay: 7s;
+  font-size: 8px;
+}
+
+.snowflake:nth-child(9) {
+  left: 90%;
+  animation-duration: 7s;
+  animation-delay: 8s;
+  font-size: 18px;
+}
+
+/* Additional Snowflakes for More Variety */
+.snowflake:nth-child(10) {
+  left: 15%;
+  animation-duration: 12s;
+  animation-delay: 1.5s;
+  font-size: 40px;
+}
+
+.snowflake:nth-child(11) {
+  left: 25%;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  font-size: 5px;
+}
+
+.snowflake:nth-child(12) {
+  left: 35%;
+  animation-duration: 8s;
+  animation-delay: 3.5s;
+  font-size: 25px;
+}
+
+.snowflake:nth-child(13) {
+  left: 45%;
+  animation-duration: 11s;
+  animation-delay: 4s;
+  font-size: 15px;
+}
+
+.snowflake:nth-child(14) {
+  left: 55%;
+  animation-duration: 9s;
+  animation-delay: 5s;
+  font-size: 50px;
+}
+
+.snowflake:nth-child(15) {
+  left: 65%;
+  animation-duration: 6s;
+  animation-delay: 6.5s;
+  font-size: 10px;
+}
+
+.snowflake:nth-child(16) {
+  left: 75%;
+  animation-duration: 13s;
+  animation-delay: 7s;
+  font-size: 30px;
+}
+
+.snowflake:nth-child(17) {
+  left: 85%;
+  animation-duration: 5s;
+  animation-delay: 8.5s;
+  font-size: 8px;
+}
+
+.snowflake:nth-child(18) {
+  left: 95%;
+  animation-duration: 12s;
+  animation-delay: 9s;
+  font-size: 22px;
+}
+
+/* Additional snowflakes for more density */
+.snowflake:nth-child(19) {
+  left: 12%;
+  animation-duration: 10s;
+  animation-delay: 1.2s;
+  font-size: 18px;
+}
+
+.snowflake:nth-child(20) {
+  left: 22%;
+  animation-duration: 9s;
+  animation-delay: 0.5s;
+  font-size: 28px;
+}
+
+.snowflake:nth-child(21) {
+  left: 32%;
+  animation-duration: 11s;
+  animation-delay: 3s;
+  font-size: 24px;
+}
+
+.snowflake:nth-child(22) {
+  left: 42%;
+  animation-duration: 8s;
+  animation-delay: 4.3s;
+  font-size: 15px;
+}
+
+.snowflake:nth-child(23) {
+  left: 52%;
+  animation-duration: 13s;
+  animation-delay: 6.5s;
+  font-size: 35px;
+}
+
+.snowflake:nth-child(24) {
+  left: 62%;
+  animation-duration: 7s;
+  animation-delay: 5s;
+  font-size: 20px;
+}
+
+.snowflake:nth-child(25) {
+  left: 72%;
+  animation-duration: 9s;
+  animation-delay: 2.2s;
+  font-size: 50px;
+}
+
+.snowflake:nth-child(26) {
+  left: 82%;
+  animation-duration: 12s;
+  animation-delay: 7.2s;
+  font-size: 12px;
+}
+
+.snowflake:nth-child(27) {
+  left: 92%;
+  animation-duration: 6s;
+  animation-delay: 1.4s;
+  font-size: 8px;
+}
+
+.snowflake:nth-child(28) {
+  left: 35%;
+  animation-duration: 10s;
+  animation-delay: 2.7s;
+  font-size: 25px;
 }
 
 .container {
@@ -39,8 +262,6 @@ body {
   }
 }
 
-
-
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 60px;
@@ -70,6 +291,7 @@ h1 {
 .add-post-button-container button {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
+  gap: 8px;
   width: 150px;
   height: 50px;
   background-color: transparent;
@@ -78,7 +300,37 @@ h1 {
   border: 5px solid;
   border-radius: 8px;
   cursor: pointer;
-  animation: borderColorAnimation .9s linear infinite;
+  animation: borderColorAnimation 0.9s linear infinite;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.add-post-button-container button::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+  background-size: 300% 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: gradientBorderAnimation 3s linear infinite;
+}
+
+.add-post-button-container button:hover::before {
+  opacity: 1;
+}
+
+.add-post-button-container button:hover {
+  color: #ffffff;
+  background-color: #333;
+  border: transparent;
+  animation: none;
 }
 
 @keyframes borderColorAnimation {
@@ -96,6 +348,16 @@ h1 {
   }
   100% {
     border-color: #fc72ff;
+  }
+}
+
+/* Gradient animation */
+@keyframes gradientBorderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
   }
 }
 
@@ -129,10 +391,9 @@ h1 {
   }
 }
 
-
 .post h2 {
   margin: 0;
-  font-size: 20px;
+  font-size: 25px;
   color: #ffffff;
   animation: jump 1s infinite ease-in-out;
 }
@@ -146,10 +407,9 @@ h1 {
   }
 }
 
-
 .post p {
   margin: 5px 0 10px;
-  font-size: 15px;
+  font-size: 20px;
   color: #fffcfc;
 }
 
@@ -165,14 +425,66 @@ h1 {
   cursor: pointer;
 }
 
-.buttons .edit-btn {
-  background: #007bff;
+/* Base styles for buttons */
+.buttons .edit-btn, .buttons .delete-btn {
+  display: inline-block;
+  padding: 5px 5px;
+  border: transparent;
+  border-radius: 8px;
   color: #fff;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
+/* Edit Button */
+.buttons .edit-btn {
+  background: #0d00ff;
+}
+
+/* Delete Button */
 .buttons .delete-btn {
-  background: #dc3545;
+  background: #ff0000;
+}
+
+/* Hover effect for both buttons */
+.buttons .edit-btn:hover, .buttons .delete-btn:hover {
   color: #fff;
+  background: #333;
+  animation: gradientBorder 1.5s linear infinite;
+}
+
+.buttons .edit-btn::before, .buttons .delete-btn::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 8px;
+  z-index: -1;
+  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+  background-size: 300% 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: gradientBorder 3s linear infinite;
+}
+
+.buttons .edit-btn:hover::before, .buttons .delete-btn:hover::before {
+  opacity: 1;
+}
+
+@keyframes gradientBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
 }
 
 .modal {
@@ -180,9 +492,10 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: transparent;
   justify-content: center;
   align-items: center;
 }
@@ -192,91 +505,160 @@ h1 {
 }
 
 .modal-content {
-  background: #fff;
+  background-color: #090808f9; /* Set background color to dark */
   padding: 20px;
   border-radius: 8px;
   width: 400px;
   max-width: 90%;
+  border: 3px solid transparent; /* Initial border color */
+  animation: borderColorAnimation 4s infinite; /* Add border animation */
+  color: #fff; /* Ensure text is visible on dark background */
 }
 
 .modal-content h2 {
   margin: 0 0 10px;
+  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 10px;
+  background-size: 300% 300%; /* Increases the background size for smooth transition */
+  animation: gradientAnimation 5s ease infinite; /* Adds the animation */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .modal-content label {
   display: block;
   margin: 10px 0 5px;
-  color: #333;
+  color: #ccc;
+  font-size: 20px;
 }
 
-.modal-content input,
-.modal-content textarea {
-  width: 100%;
+.modal-content input {
+  align-items: center;
+  width: 375px;
+  height: 20px;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ddd;
+  border: 2px solid;
   border-radius: 4px;
+  animation: borderColorAnimation .5s infinite; /* Adds the animation */
+}
+
+.modal-content textarea {
+  align-items: center;
+  width: 375px;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  animation: borderColorAnimation .5s infinite;
 }
 
 .modal-content button {
   padding: 10px;
-  background: #007bff;
+  background: #0d00ff;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 20;
+  transition: background 0.5s ease; /* Adds a smooth transition for the background color */
+}
+
+.modal-content button:hover {
+  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff); /* Gradient on hover */
+  background-size: 300% 300%; /* Enlarges the background for smooth transition */
+  animation: gradientHoverAnimation 3s ease infinite; /* Animation for the gradient */
 }
 
 .modal-content .cancel-btn {
-  background: #6c757d;
+  background: #ff0000;
   color: #fff;
   margin-left: 10px;
 }
 
-/* Notification Styling */
+.modal-content .cancel-btn:hover {
+  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff); /* Gradient on hover for cancel button */
+  background-size: 300% 300%;
+  animation: gradientHoverAnimation 3s ease infinite; /* Animation for the cancel button */
+}
+
+@keyframes gradientHoverAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .notification {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #007bff;
+  background: linear-gradient(45deg, #fc72ff, #8f68ff, #487bff); /* Initial gradient background */
   color: #fff;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
   display: none;
+  z-index: 1;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: gradientAnimation 4s infinite alternate; /* Gradient animation */
 }
 
 .notification.active {
   display: block;
-  animation: fadeIn 0.3s, fadeOut 0.3s .3s;
+  animation: fadeIn .1s, fadeOut .1s 1.7s; /* Adjust the fadeIn and fadeOut timing */
 }
 
 .notification button {
   margin-top: 10px;
   background: #fff;
-  color: #007bff;
+  color: #0d00ff;
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
 }
 
+.notification button:hover {
+  background: #111111;
+  color: #fff; /* White text on hover */
+}
+
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes fadeOut {
   from {
-      opacity: 1;
+    opacity: 1;
   }
   to {
-      opacity: 0;
+    opacity: 0;
   }
 }
