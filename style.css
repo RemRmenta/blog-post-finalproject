@@ -96,7 +96,6 @@ body {
   font-size: 18px;
 }
 
-/* Additional Snowflakes for More Variety */
 .snowflake:nth-child(10) {
   left: 15%;
   animation-duration: 12s;
@@ -160,7 +159,6 @@ body {
   font-size: 22px;
 }
 
-/* Additional snowflakes for more density */
 .snowflake:nth-child(19) {
   left: 12%;
   animation-duration: 10s;
@@ -351,7 +349,6 @@ h1 {
   }
 }
 
-/* Gradient animation */
 @keyframes gradientBorderAnimation {
   0% {
     background-position: 0% 50%;
@@ -400,10 +397,10 @@ h1 {
 
 @keyframes jump {
   0%, 100% {
-    transform: translateY(0); /* Start and end position */
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(-3px); /* Move upward */
+    transform: translateY(-3px);
   }
 }
 
@@ -505,14 +502,14 @@ h1 {
 }
 
 .modal-content {
-  background-color: #090808f9; /* Set background color to dark */
+  background-color: #090808f9;
   padding: 20px;
   border-radius: 8px;
   width: 400px;
   max-width: 90%;
-  border: 3px solid transparent; /* Initial border color */
-  animation: borderColorAnimation 4s infinite; /* Add border animation */
-  color: #fff; /* Ensure text is visible on dark background */
+  border: 3px solid transparent;
+  animation: borderColorAnimation 4s infinite;
+  color: #fff;
 }
 
 .modal-content h2 {
@@ -522,8 +519,8 @@ h1 {
   text-align: center;
   font-size: 25px;
   border-radius: 10px;
-  background-size: 300% 300%; /* Increases the background size for smooth transition */
-  animation: gradientAnimation 5s ease infinite; /* Adds the animation */
+  background-size: 300% 300%;
+  animation: gradientAnimation 5s ease infinite;
 }
 
 @keyframes gradientAnimation {
@@ -553,7 +550,7 @@ h1 {
   margin-bottom: 10px;
   border: 2px solid;
   border-radius: 4px;
-  animation: borderColorAnimation .5s infinite; /* Adds the animation */
+  animation: borderColorAnimation .5s infinite;
 }
 
 .modal-content textarea {
@@ -576,13 +573,13 @@ h1 {
   border-radius: 4px;
   cursor: pointer;
   font-size: 20;
-  transition: background 0.5s ease; /* Adds a smooth transition for the background color */
+  transition: background 0.5s ease;
 }
 
 .modal-content button:hover {
-  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff); /* Gradient on hover */
-  background-size: 300% 300%; /* Enlarges the background for smooth transition */
-  animation: gradientHoverAnimation 3s ease infinite; /* Animation for the gradient */
+  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+  background-size: 300% 300%;
+  animation: gradientHoverAnimation 3s ease infinite;
 }
 
 .modal-content .cancel-btn {
@@ -592,9 +589,9 @@ h1 {
 }
 
 .modal-content .cancel-btn:hover {
-  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff); /* Gradient on hover for cancel button */
+  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
   background-size: 300% 300%;
-  animation: gradientHoverAnimation 3s ease infinite; /* Animation for the cancel button */
+  animation: gradientHoverAnimation 3s ease infinite;
 }
 
 @keyframes gradientHoverAnimation {
@@ -614,7 +611,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(45deg, #fc72ff, #8f68ff, #487bff); /* Initial gradient background */
+  background: linear-gradient(45deg, #fc72ff, #8f68ff, #487bff);
   color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -622,12 +619,12 @@ h1 {
   display: none;
   z-index: 1;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  animation: gradientAnimation 4s infinite alternate; /* Gradient animation */
+  animation: gradientAnimation 4s infinite alternate;
 }
 
 .notification.active {
   display: block;
-  animation: fadeIn .1s, fadeOut .1s 1.7s; /* Adjust the fadeIn and fadeOut timing */
+  animation: fadeIn .1s, fadeOut .1s 1.7s;
 }
 
 .notification button {
@@ -642,7 +639,7 @@ h1 {
 
 .notification button:hover {
   background: #111111;
-  color: #fff; /* White text on hover */
+  color: #fff; 
 }
 
 @keyframes fadeIn {
