@@ -1,5 +1,9 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0;
   background-color: #302e2d;
 }
@@ -7,10 +11,9 @@ body {
 .container {
   max-width: 1800px;
   min-width: 300px;
-  margin: 0px auto;
+  margin: 0 auto;
   background: transparent;
   padding: 50px;
-  background-color: trnasparent;
   font-size: 18px;
   font-family: Arial, sans-serif;
   border: 5px solid;
@@ -37,12 +40,13 @@ body {
 }
 
 
+
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 50px;
+  font-size: 60px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 0px;
   background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
   background-size: 200%;
   background-clip: text;
@@ -59,18 +63,18 @@ h1 {
 
 .add-post-button-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  margin-bottom: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .add-post-button-container button {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
   width: 150px;
   height: 50px;
   background-color: transparent;
   color: #ffffff;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
+  font-size: 20px;
   border: 5px solid;
   border-radius: 8px;
   cursor: pointer;
@@ -96,11 +100,11 @@ h1 {
 }
 
 .post {
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   color: white;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 20px;
   border: 5px solid;
   border-radius: 10px;
@@ -128,18 +132,30 @@ h1 {
 
 .post h2 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 20px;
   color: #ffffff;
+  animation: jump 1s infinite ease-in-out;
 }
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0); /* Start and end position */
+  }
+  50% {
+    transform: translateY(-3px); /* Move upward */
+  }
+}
+
 
 .post p {
   margin: 5px 0 10px;
+  font-size: 15px;
   color: #fffcfc;
 }
 
 .buttons {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .buttons button {
